@@ -23,6 +23,7 @@ class Post(models.Model):
     # Indicates the last time the post was updated
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
 
+#pg 38
     class Meta:
         ordering = ('-publish',)
 
